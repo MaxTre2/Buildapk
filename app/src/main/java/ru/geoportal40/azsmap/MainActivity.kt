@@ -130,6 +130,9 @@ class MainActivity : AppCompatActivity() {
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
         findViewById<View>(R.id.retryButton).setOnClickListener { loadSite() }
+        findViewById<View>(R.id.infoButton).setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
+        }
 
         setupWebView()
 
