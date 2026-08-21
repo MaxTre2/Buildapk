@@ -2,4 +2,5 @@
     <string name="app_name">АЗС Карта 40</string>
     <string name="no_connection">Нет подключения к интернету.\nПроверьте соединение и повторите попытку.</string>
     <string name="retry">Повторить</string>
+    <string name="developer_credit">Разработчик: Константин Ефремов</string>
 </resources>
