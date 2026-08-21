@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Map pin -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C40,20 29,31 29,45 C29,64 54,88 54,88 C54,88 79,64 79,45 C79,31 68,20 54,20 Z" />
+
+    <!-- Fuel drop cut-out -->
+    <path
+        android:fillColor="#1E7A34"
+        android:pathData="M54,33 C61,42 66,48 66,55 C66,61.6 60.6,67 54,67 C47.4,67 42,61.6 42,55 C42,48 47,42 54,33 Z" />
+</vector>
