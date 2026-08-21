@@ -3,4 +3,21 @@
     <string name="no_connection">Нет подключения к интернету.\nПроверьте соединение и повторите попытку.</string>
     <string name="retry">Повторить</string>
     <string name="developer_credit">Разработчик: Константин Ефремов</string>
+
+    <!-- About screen -->
+    <string name="about_app">О приложении</string>
+    <string name="about_title">О ПРИЛОЖЕНИИ</string>
+    <string name="about_developer_label">Разработчик</string>
+    <string name="about_developer_name">Константин Ефремов</string>
+    <string name="about_site_label">Наш сайт</string>
+    <string name="about_site_url">https://maxtre.ucoz.ru</string>
+    <string name="about_email_label">Электронная почта</string>
+    <string name="about_email_address">example@example.com</string>
+    <string name="about_support_text">Это приложение живёт благодаря вам. Каждое пожертвование — как голос в нашу пользу.\n\nМы собираем на кофе не для того, чтобы наживаться, а чтобы понимать: мы на правильном пути.\n\nСпасибо, что вы с нами в этой команде ☕</string>
+    <string name="about_sber">Сбер</string>
+    <string name="about_yandex">Яндекс</string>
+    <string name="card_placeholder">0000 0000 0000 0000</string>
+    <string name="copied_toast">Скопировано</string>
+    <string name="close">Закрыть</string>
+    <string name="app_version_label">Версия %1$s</string>
 </resources>
