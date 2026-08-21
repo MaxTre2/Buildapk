@@ -28,7 +28,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.location.LocationManagerCompat
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
@@ -104,7 +103,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var webView: WebView
-    private lateinit var swipeRefresh: SwipeRefreshLayout
     private lateinit var progressBar: ProgressBar
     private lateinit var offlineLayout: View
     private lateinit var locationManager: LocationManager
@@ -127,13 +125,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         webView = findViewById(R.id.webView)
-        swipeRefresh = findViewById(R.id.swipeRefresh)
         progressBar = findViewById(R.id.progressBar)
         offlineLayout = findViewById(R.id.offlineLayout)
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
         findViewById<View>(R.id.retryButton).setOnClickListener { loadSite() }
-        swipeRefresh.setOnRefreshListener { webView.reload() }
 
         setupWebView()
 
@@ -203,7 +199,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPageFinished(view: WebView, url: String) {
                 super.onPageFinished(view, url)
-                swipeRefresh.isRefreshing = false
                 progressBar.visibility = View.GONE
                 // Safety net in case the shim wasn't applied early enough.
                 view.evaluateJavascript(GEO_SHIM_JS, null)
@@ -255,7 +250,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showOffline() {
-        swipeRefresh.isRefreshing = false
         progressBar.visibility = View.GONE
         webView.visibility = View.GONE
         offlineLayout.visibility = View.VISIBLE
